@@ -1,0 +1,35 @@
+#menu.upload=Upload
+
+#####################################
+############## ELEVEN ###############
+
+eleven.name=DreamTech ELEVEN
+eleven.vid.0=0x0d28
+eleven.pid.0=0x0204
+
+#eleven.menu.upload.serial=via Serial
+#eleven.menu.upload.bluetooth=via Bluetooth
+#eleven.menu.upload.bluetooth.upload.tool=otable
+
+eleven.upload.tool=openocd
+eleven.upload.protocol=sam-ba
+eleven.upload.maximum_size=385024
+eleven.upload.use_1200bps_touch=false
+eleven.upload.speed=115200
+eleven.upload.wait_for_upload_port=false
+
+eleven.build.mcu=cortex-m4
+eleven.build.f_cpu=64000000L
+eleven.build.usb_product="ELEVEN"
+eleven.build.board=ELEVEN
+eleven.build.core=arduino
+eleven.build.extra_flags=-mthumb
+eleven.build.ldscript=linker_scripts/gcc/flash.ld
+eleven.build.openocdscript=openocd_scripts/eleven.cfg
+eleven.build.variant=eleven
+eleven.build.components=components
+eleven.build.vid=0x0d28
+eleven.build.pid=0x0204
+
+eleven.bootloader.file=eleven/bootloader_eleven_v1.0.0.hex
+eleven.firmware.softdevice.file=eleven/softdevice/s132_nrf52_2.0.0_softdevice.hex
